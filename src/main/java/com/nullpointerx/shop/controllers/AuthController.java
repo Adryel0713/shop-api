@@ -3,6 +3,7 @@ package com.nullpointerx.shop.controllers;
 import com.nullpointerx.shop.model.User;
 import com.nullpointerx.shop.security.JwtUtil;
 import com.nullpointerx.shop.services.UserService;
+import io.jsonwebtoken.Jwt;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
