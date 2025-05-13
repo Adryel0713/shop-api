@@ -1,12 +1,11 @@
 package com.nullpointerx.shop.services;
 
+import com.nullpointerx.shop.exceptions.RecursoNaoEncontradoException;
 import com.nullpointerx.shop.model.Product;
 import com.nullpointerx.shop.repositories.ProductRepository;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ProductService {
@@ -22,7 +21,7 @@ public class ProductService {
     }
 
     public Product findById(Long id){
-        return repository.findById(id).orElseThrow();
+        return repository.findById(id).orElseThrow(() -> new RecursoNaoEncontradoException("O ID " + id + " não foi encontrado."));
     }
 
     public Product insert(Product product){
@@ -30,6 +29,9 @@ public class ProductService {
     }
 
     public void deleteById(Long id){
+        if(!repository.existsById(id)){
+            throw new RecursoNaoEncontradoException("O ID " + id + " não foi encontrado!");
+        }
         repository.deleteById(id);
     }
 }
