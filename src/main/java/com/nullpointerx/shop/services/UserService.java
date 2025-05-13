@@ -21,10 +21,11 @@ public class UserService {
 
     public User userRegister(String username, String password){
         String senhaCriptografada = passwordEncoder.encode(password);
-        return new User(username,senhaCriptografada);
+        User user = new User(username,senhaCriptografada);
+        return repository.save(user);
     }
 
     public Optional<User> findByUser(String username){
-        return repository.findByUser(username);
+        return repository.findByUsername(username);
     }
 }
