@@ -27,17 +27,6 @@
 ##  Estrutura do Projeto
 ![image](https://github.com/user-attachments/assets/c5ed30d0-ae9e-4c4d-b404-7179e4434e3a)
 
-## Application.properties
-```sql
-spring.datasource.url=jdbc:postgresql://localhost:5432/shop <br>
-spring.datasource.username=postgres <br>
-spring.datasource.password=1234 <br>
-spring.datasource.driver-class-name=org.postgresql.Driver <br>
-spring.jpa.hibernate.ddl-auto=update <br>
-spring.jpa.show-sql=true <br>
-spring.jpa.properties.hibernate.format_sql=true <br>
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect <br>
-```
 
 ## Endpoints de Autenticação
 POST /auth/register → Criação de usuário
@@ -66,8 +55,6 @@ http://localhost:8080/auth/register
 # Logar (POST)
 http://localhost:8080/auth/login
 ```
-## Observações
-O projeto não possui interface gráfica .
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
