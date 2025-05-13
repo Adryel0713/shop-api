@@ -46,11 +46,31 @@ POST /auth/login → Autenticação e geração do token JWT
 Use o token para acessar os endpoints protegidos enviando no header:
 
 Authorization: Bearer SEU_TOKEN_JWT
-![image](https://github.com/user-attachments/assets/1ccb3ef2-0dc9-43bb-8916-9bb79783f834)
 ![image](https://github.com/user-attachments/assets/7efc8efc-57c1-439b-b080-02e5b2576f90)
+```
+# Listar todos os produtos (GET)
+http://localhost:8080/api/products
 
+# Procurar produtos por id (GET)
+http://localhost:8080/api/products/{id}
+
+# Deletar produtos por id (DELETE)
+http://localhost:8080/api/products/{id}
+
+# Inserir produtos (POST)
+http://localhost:8080/api/products
+
+# Registrar usuário (POST)
+http://localhost:8080/auth/register
+
+# Logar (POST)
+http://localhost:8080/auth/login
+```
 ## Observações
 O projeto não possui interface gráfica .
+
+## Licença
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 
 
