@@ -36,6 +36,48 @@ Use o token para acessar os endpoints protegidos enviando no header:
 
 Authorization: Bearer SEU_TOKEN_JWT
 ![image](https://github.com/user-attachments/assets/7efc8efc-57c1-439b-b080-02e5b2576f90)
+## 🚀 Como executar o projeto
+
+Certifique-se de ter o **Java 21+** e o **Maven** instalados. Para verificar:
+
+```bash
+java -version
+mvn -version
+```
+## 🔧 Passos para execução
+Clone o repositório:
+```
+git clone https://github.com/Adryel0713/shop-api.git
+cd shop-api
+
+```
+
+# Compile e instale as dependências:
+
+```bash
+
+mvn clean install
+
+```
+# Execute o projeto:
+
+```bash
+
+mvn spring-boot:run
+```
+A aplicação será iniciada em http://localhost:8080
+
+## 📜 Logs e registros
+Durante a execução, os logs serão exibidos diretamente no terminal. Eles incluem:
+
+Status de inicialização do Spring Boot
+
+Erros e exceções
+
+Conexões com o banco de dados
+
+## Requisições HTTP recebidas
+
 ```
 # Listar todos os produtos (GET)
 http://localhost:8080/api/products
