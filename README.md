@@ -29,12 +29,14 @@
 
 
 ## Endpoints de Autenticação
-POST /auth/register → Criação de usuário
+POST /auth/register → Criação de usuário <br>
 POST /auth/login → Autenticação e geração do token JWT
 
-Use o token para acessar os endpoints protegidos enviando no header:
+Use o token para acessar os endpoints protegidos enviando no header: 
 
 Authorization: Bearer SEU_TOKEN_JWT
+
+
 ![image](https://github.com/user-attachments/assets/7efc8efc-57c1-439b-b080-02e5b2576f90)
 ## 🚀 Como executar o projeto
 
@@ -49,20 +51,16 @@ Clone o repositório:
 ```
 git clone https://github.com/Adryel0713/shop-api.git
 cd shop-api
-
 ```
 
 # Compile e instale as dependências:
 
 ```bash
-
 mvn clean install
-
 ```
 # Execute o projeto:
 
 ```bash
-
 mvn spring-boot:run
 ```
 A aplicação será iniciada em http://localhost:8080
